@@ -13,9 +13,9 @@ export const useCounterStore = defineStore("counter", {
   },
 
   actions: {
-    pushPerson(_name: string,_family: string) {
+    pushPerson(_name: string,_family: string,_code: number) {
       this.personlist.push(
-        {name: _name, family: _family }
+        {name: _name, family: _family, code:_code}
         )
   },
 }
