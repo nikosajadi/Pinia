@@ -1,7 +1,8 @@
 <script setup>
 import { useCounterStore } from "../store/piniaa";
 
-const counter = useCounterStore();
+const storage = useCounterStore();
+
 let firstname = ref("");
 let lastname = ref("");
 let code = ref("");
@@ -10,7 +11,7 @@ const EmptyInput = () => {
   if (firstname.value === "" || lastname.value === "" || code.value === "") {
     alert("Please fill all items...");
   } else {
-    counter.pushPerson(firstname.value, lastname.value, code.value);
+    storage.pushPerson(firstname.value, lastname.value, code.value);
 	firstname.value = "";
 	lastname.value = "";
 	code.value = "";
@@ -93,8 +94,10 @@ const EmptyInput = () => {
               Add
             </button>
           </div>
+		  
         </form>
-        {{ counter.getPersons }}
+		
+        
       </div>
     </div>
   </div>
