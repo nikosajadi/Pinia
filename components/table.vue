@@ -16,7 +16,7 @@ const DeleteIndex = (data) => {
 };
 </script>
 <template>
-  <div class="p-5">
+  <div class="p-5" >
     <table class="min-w-full divide-y divide-gray-200">
       <thead>
         <tr>
