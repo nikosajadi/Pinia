@@ -3,10 +3,12 @@
 
 
 <template>
-<div>
-    <Form />
-    <Table />
-   
+<div class="flex flex-col p-10">
+ <p class="text-3xl mb-8">Nuxt courses</p>
+
+ <NuxtLink class="text-green-500 font-bold " to="/conditions" >conditions</NuxtLink>
+ <NuxtLink class="text-green-500 font-bold " to="/pinia">pinia</NuxtLink>
+ <NuxtLink class="text-green-500 font-bold " to="/styles">styles</NuxtLink>
 </div>
     
 
