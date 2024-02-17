@@ -9,6 +9,7 @@
  <NuxtLink class="text-green-500 font-bold " to="/conditions" >conditions</NuxtLink>
  <NuxtLink class="text-green-500 font-bold " to="/pinia">pinia</NuxtLink>
  <NuxtLink class="text-green-500 font-bold " to="/styles">styles</NuxtLink>
+ <NuxtLink class="text-green-500 font-bold " to="/loadings">loadings</NuxtLink>
 </div>
     
 
