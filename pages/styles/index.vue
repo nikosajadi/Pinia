@@ -20,5 +20,6 @@ const content3 =
     <div v-html="content"></div>
     <p v-html="content2"></p>
     <div v-html="content3"></div>
+	<NuxtLink class="text-green-500 font-bold " to="/">back</NuxtLink>
   </div>
 </template>

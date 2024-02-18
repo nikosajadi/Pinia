@@ -42,5 +42,6 @@ watch(
    
 
         <h1 class="m-5">{{ statuss }}</h1>
+        <NuxtLink class="text-green-500 font-bold " to="/">back</NuxtLink>
     </div>
 </template>

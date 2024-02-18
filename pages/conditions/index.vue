@@ -68,6 +68,7 @@ const isShow = ref(true);
       class="bg-green-500 text-black mx-4 p-2"
       placeholder="input B"
     />
+    <NuxtLink class="text-green-500 font-bold " to="/">Back</NuxtLink>
   </div>
 </template>
 

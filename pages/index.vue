@@ -11,6 +11,8 @@
  <NuxtLink class="text-green-500 font-bold " to="/styles">styles</NuxtLink>
  <NuxtLink class="text-green-500 font-bold " to="/loadings">loadings</NuxtLink>
  <NuxtLink class="text-green-500 font-bold " to="/Watch">Watch</NuxtLink>
+ <NuxtLink class="text-green-500 font-bold " to="/toast">Toast</NuxtLink>
+ <NuxtLink class="text-green-500 font-bold " to="/sidebar">Sidebar</NuxtLink>
 </div>
     
 
