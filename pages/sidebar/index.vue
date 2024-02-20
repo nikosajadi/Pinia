@@ -10,8 +10,6 @@ const toggleButton = () => {
 </script>
 <template>
   <div>
-    <NuxtLink class="text-green-500 font-bold" to="/">Back</NuxtLink>
-
     <div class="sidebar" :class="[{ close: !isOpen }]">
       <!-- isopen=!isopen -->
       <button @click="toggleButton()" type="button" class="button">
@@ -21,8 +19,10 @@ const toggleButton = () => {
 
     <button @click="toggleButton()" type="button" class="button">Open</button>
     {{ isOpen }}
+    <NuxtLink class="text-green-500 font-bold" to="/">Back</NuxtLink>
   </div>
 </template>
+
 <style>
 .sidebar {
   @apply bg-red-200 text-white font-bold w-60 h-2/3   fixed top-5 right-5 rounded-lg;
