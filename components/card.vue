@@ -28,7 +28,7 @@ const props = defineProps({
         the streets of New York as he becomes the target of the world's most
         ruthless killers.
       </p>
-      <NuxtLink to="/practice1/details">
+      <NuxtLink :to="`/practice1/${props.id}`">
         <button>
           <i class="fab fa-youtube"></i>
           Play trailer on YouTube
