@@ -8,11 +8,18 @@ const { data } = await useFetch(
   `https://moviesapi.ir/api/v1/movies/${movieID}`
 );
 console.log(data.value);
+
+const my_name = useCookie("name", { maxAge: 2000 });
+console.log(my_name.value);
 </script>
 <template>
   <div>
-    <h1 class="mb-8 text-2xl font-extrabold leading-none tracking-tight text-gray-500 md:text-5xl lg:text-6xl dark:text-white">{{ data.title }}</h1>
-
+    <h1
+      class="mb-8 text-2xl font-extrabold leading-none tracking-tight text-gray-500 md:text-5xl lg:text-6xl dark:text-white"
+    >
+      {{ data.title }}
+    </h1>
+    {{ my_name }}
     <div class="flex flex-row">
       <img
         v-for="(img, i) in data.images"
