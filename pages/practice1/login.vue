@@ -1,34 +1,35 @@
 <script setup>
-
-import { toast } from 'vue3-toastify';
+import { toast } from "vue3-toastify";
 import "vue3-toastify/dist/index.css";
 const username = ref("");
 const password = ref("");
 const router = useRouter();
+
+const my_token = useCookie("token", { maxAge: 2000 });
+
 let goToLogin = () => {
-    if (username.value =="" )  notify("Please input your email...");
- else if (password.value =="" ) notify("Please input your Password...");
+  if (username.value == "") notify("Please input your email...");
+  else if (password.value == "") notify("Please input your Password...");
   else {
-        if (username.value == "admin" & password.value == "admin") {
-            const my_token = useCookie("token", { maxAge: 2000 });
-            my_token.value = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5hc2liZWggU2FkYXQiLCJmYW1pbHkiOiJTYWphZGkiLCJpYXQiOjE1MTYyMzkwMjJ9.AEOA_sbqPUYCrOvqKbTQ9fZLP3Mxxb2UkBvRvXhsb-U";
-           router.push({
-            path: "/practice1/",
-              });
-             }else {  notify("you are not admin");
-          } 
-             }
+    if ((username.value == "admin") & (password.value == "admin")) {
+      my_token.value =
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik5hc2liZWggU2FkYXQiLCJmYW1pbHkiOiJTYWphZGkiLCJpYXQiOjE1MTYyMzkwMjJ9.AEOA_sbqPUYCrOvqKbTQ9fZLP3Mxxb2UkBvRvXhsb-U";
+      router.push({ path: "/practice1/" });
+    } else {
+      notify("you are not admin");
+    }
   }
-    const notify = (content) => {
-    toast(content, {
-  "theme": "dark",
-  "type": "faild",
-  "position": "bottom-right",
-  "rtl": true,
-  "transition": "zoom",
-  "dangerouslyHTMLString": true
-})
-}
+};
+const notify = (content) => {
+  toast(content, {
+    theme: "dark",
+    type: "faild",
+    position: "bottom-right",
+    rtl: true,
+    transition: "zoom",
+    dangerouslyHTMLString: true,
+  });
+};
 </script>
 <template>
   <div>
@@ -57,6 +58,7 @@ let goToLogin = () => {
               >
                 Sign in to your account
               </h1>
+              <p>Your Token : {{ my_token }}</p>
               <form class="space-y-4 md:space-y-6" action="#">
                 <div>
                   <label
@@ -136,6 +138,5 @@ let goToLogin = () => {
         </div>
       </section>
     </div>
-
   </div>
 </template>
