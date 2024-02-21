@@ -1,6 +1,5 @@
 <script setup>
 const isLoading = ref(false);
-
 const doing = () => {
   isLoading.value = true;
   setTimeout(() => {
@@ -22,6 +21,7 @@ const doing = () => {
       >
         linkToB
       </button>
+     
       <!-- {{ isLoading }} -->
     </div>
   </div>

@@ -23,6 +23,7 @@ onMounted(async () => {
         :title="item.title"
         :poster="item.poster"
       />
+      <NuxtLink class="text-green-500 font-bold " to="/practice1/login">login</NuxtLink>
     </div>
   </div>
 </template>
