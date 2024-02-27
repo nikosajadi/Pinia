@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  middleware: ["auth"], middleware: ["login"],
+  middleware: ["auth"], middleware: ["auth"],
   // or middleware: 'auth'
 });
 const router = useRouter();
@@ -17,10 +17,6 @@ onMounted(async () => {
   movieList.value = data.value.data;
   console.log(movieList.value);
 
-  const my_name = useCookie("name", { maxAge: 2000 });
-  console.log(my_name.value);
-  my_name.value = "reza";
-  console.log(my_name.value);
 });
 </script>
 

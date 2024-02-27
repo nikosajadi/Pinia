@@ -15,6 +15,7 @@
  <NuxtLink class="text-green-500 font-bold " to="/sidebar">Sidebar</NuxtLink>
  <NuxtLink class="text-pink-500 font-bold " to="/practice1">practice1</NuxtLink>
  <NuxtLink class="text-pink-500 font-bold " to="/practice1">Login</NuxtLink>
+ <NuxtLink class="text-pink-500 font-bold " to="/search">search</NuxtLink>
 </div>
     
 
