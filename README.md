@@ -1,8 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Pinia Store Project
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project demonstrates the integration of **Pinia** with **Nuxt.js** for state management in a Vue.js application. It provides an example of how to handle state globally across different components in a structured and scalable way.
 
-## Setup
+## Features
+- State management with **Pinia** for efficient and organized global state.
+- A modular architecture for managing the application state.
+- Example components showing how to access and update the global state.
+
+## Technology Stack
+- **Nuxt.js**: Server-side rendered Vue.js framework.
+- **Pinia**: Next-gen state management library for Vue.js.
+- **TypeScript**: Used for type-safe development.
+- **Tailwind CSS**: For modern styling and responsiveness.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Pinia-main.git
 
 Make sure to install the dependencies:
 
@@ -46,30 +61,6 @@ Build the application for production:
 # npm
 npm run build
 
-# pnpm
-pnpm run build
 
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
